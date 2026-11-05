@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>برای مشاهده کلیک کنید</title>
+
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Tahoma, Arial, sans-serif;
+      background: linear-gradient(135deg, #eef2ff, #f8fafc);
+    }
+
+    .container {
+      background: white;
+      padding: 50px 30px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      max-width: 90%;
+    }
+
+    h1 {
+      color: #1e293b;
+      margin-bottom: 30px;
+    }
+
+    button {
+      background: #2563eb;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 12px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      font-family: Tahoma, Arial, sans-serif;
+    }
+
+    button:hover {
+      background: #1d4ed8;
+    }
+
+    #message {
+      display: none;
+      color: green;
+      margin-top: 25px;
+      line-height: 2;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>برای مشاهده کلیک کنید</h1>
+<img src="IMG_20261105_174354_259.jpg" alt="عکس من"
+width="300">
+
+    <button onclick="openHistory()">
+      مشاهده تاریخچه گوگل
+    </button>
+
+    <p id="message">
+      ممنون از همراهی شما.
+      لطفاً پس از مشاهده تاریخچه به سایت برگردید.
+    </p>
+  </div>
+
+  <script>
+    function openHistory() {
+      window.open(
+        "https://myactivity.google.com/",
+        "_blank"
+      );
+
+      document.getElementById("message").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
